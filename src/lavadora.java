@@ -5,7 +5,7 @@ public class lavadora extends electrodomestico{
     boolean aguaCaliente;
 
     public lavadora(String tipo, String marca, double potencia) {
-        super(tipo, marca, potencia);
+        super(tipo, marca, potencia); //llama al constructor del padre
         this.aguaCaliente=false;
     }
 
@@ -14,7 +14,7 @@ public class lavadora extends electrodomestico{
         this.precio = precio;
         this.aguaCaliente = aguaCaliente;
     }
-    public double getConsumo(int horas) //cuando en la clase padre es abstracto, aqui se pone el codigo
+    public double getConsumo(int horas) //cuando en la clase padre es abstracto, aquí se pone el codigo
     {
         if (this.aguaCaliente==false)//agua fria
         {
